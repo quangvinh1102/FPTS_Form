@@ -7,4 +7,69 @@
 
 
 /* MOBILE */
-@media (max-width: 740px) {}
+@media (max-width: 740px) {
+    .contact {
+        display: none;
+    }
+    .account {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    .header_mobile {
+        display: block;
+    }
+    footer ul {
+        display: block;
+    }
+    footer ul li {
+        padding: 5px 0;
+    }
+    footer ul li::after {
+        display: none;
+    }
+    .nav_mobile {
+        display: block;
+        background-color: #2371AF;
+        width: 50%;
+        position: absolute;
+        z-index: 3;
+        max-height: 123%;
+        top: 61px;
+    }
+    .nav_mobile ul {
+        list-style: none;
+        padding: 0;
+        height: 100%;
+    }
+    .mobile_user {
+        display: block;
+    }
+    .mobile_user_info img {
+        width: 50px;
+    }
+    .nav_mobile ul li {
+        padding: 14px 0px 0px 40px;
+        border-bottom: 1px solid #ccc;
+        color: #fff;
+    }
+    .nav_mobile ul li:hover {
+        cursor: pointer;
+        background-color: #4D4D4D;
+    }
+    .nav_mobile ul li:first-child:hover {
+        background-color: #2371AF;
+    }
+    .overlay {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 2;
+        top: 61px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}

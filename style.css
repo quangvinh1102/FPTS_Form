@@ -10,6 +10,12 @@
 .active2 {
     border-bottom: 5px solid #0055BA;
 }
+.hide {
+    display: none !important;
+}
+.active3 {
+    background-color:#4D4D4D;
+}
 .contact {
     background-color: #007DB8;
 }
@@ -40,7 +46,14 @@
 .account .account_logo img {
     width: 197px;
 }
-
+.account_menu {
+    color: #2A71AF;
+    position: relative;
+}
+.account_menu span {
+    padding-left: 7px;
+    cursor: pointer;
+}
 nav {
     background-color: #E5E5E5;
     overflow: auto;
@@ -59,14 +72,15 @@ nav {
 }
 .nav_menu li {
     position: relative;
+    line-height: 45px;
 }
 .nav_menu li::after {
     content: "";
     position: absolute;
-    top: 0px;
-    right: -10px;
+    top: 5px;
+    right: -5px;
     width: 1px;
-    height: 22px;
+    height: 35px;
     background-color: #d2d2d2;
 }
 .nav_menu li a:hover {
@@ -163,6 +177,7 @@ footer ul li a{
 }
 .footer-detail {
     background-color: #4D4D4D;
+    padding-bottom: 15px;
 }
 .footer-detail h6 {
     color: #e66f21;
@@ -175,4 +190,47 @@ footer ul li a{
     background-color: #044E95;
     text-align: center;
     color: #fff;
+    padding: 10px;
+}
+
+.acc_menu_moblie {
+    width: 320px;
+    margin-top: 20px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+.acc_menu_moblie::before {
+    content: "";
+    border-color: transparent;
+    border-style: dashed dashed solid;
+    border-width: 16px 15.5px 16.5px;
+    position: absolute;
+    right: 41.5px;
+    z-index: 1;
+    bottom: -20px;
+    top: -32px;
+    height: 16px;
+    width: 14px;
+    border-bottom-color: #ccc;
+}
+.mobile_user {
+    display: flex;
+    justify-content: space-around;
+}
+.list-group-item-action:focus, .list-group-item-action:hover {
+    background-color: #ccc;
+}
+.list-group-item-action:first-child:hover {
+    background-color: var(--bs-list-group-bg) !important;
+}
+.header_mobile {
+    display: none;
+}
+.nav_mobile {
+    display: none;
+}
+.overlay {
+    display: none;
 }
